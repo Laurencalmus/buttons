@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Certs</title>
+   </head>
+   <body>
+    
+    <div class="container">
+        <h1>{{certMessage}}</h1>
+
+        <div class="label">
+        <label>Cert ID: </label>
+        </div>
+
+        <div class="textBox">
+        <input type="text" [(ngModel)]="certID" placeholder="" />
+        </div>
+
+        <button class="button" (click)="buttonTest()">Get</button>  
+        <div class="feedback"><p>You've typed cert ID# <span class="feedbackNumber">{{certID}}</span>.</p></div>
+    
+    </div>
+
+   </body>
+   </html>
+

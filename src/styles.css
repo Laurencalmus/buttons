@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    padding: 5%;
+    padding-top: 0%;
+}
+
+#heading {
+    top:5%;
+    position: fixed;
+    width: 100%;
+}
+
+#heading a {
+    color: black;
+}
+
+#nav {
+    top: 10%;
+    position: fixed;
+    width: 100%;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+#nav li {
+    list-style-type: none;
+}
+  
+#nav li a {
+    float: left;
+    padding: 2%;
+    color: rgb(79, 125, 194);
+  }
+  
+
+
+.container {
+    width: 20%;
+    height: 33%;
+    margin-left: 5%;
+    margin-right: 33%;
+    margin-top: 20%;
+    border: solid 1px rgba(128, 128, 128, 0.5);
+    padding: 3%;
+}
+
+.label {
+    padding: 5%;
+}
+
+.textBox {
+    padding: 5%;
+    margin-top: -5%;
+}
+
+.button {
+    margin: 5%;
+    margin-top: 5%;
+}
+
+.feedback {
+    margin: 5%;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.feedbackNumber {
+    color: rgb(79, 125, 194);
+}

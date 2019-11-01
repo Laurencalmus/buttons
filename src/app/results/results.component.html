@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+</head>
+<body>
+ 
+ <div class="container">
+ <h1>{{resultMessage}}</h1>
+
+ <div class="label">
+ <label>Candidate ID: </label>
+ </div>
+
+ <div class="textBox">
+ <input type="text" [(ngModel)]="candidateID" placeholder="" />
+ </div>
+
+ <button class="button" (click)="buttonTest()">Post</button>  
+ <div class="feedback"><p>You've typed ID# <span class="feedbackNumber">{{candidateID}}</span>.</p></div>
+ </div>
+
+ <!--<script>
+ var app = angular.module('certsScratch', []);
+ app.controller('myCtrl', function($scope, $http) {
+     $http({
+         method : "POST",
+            url : ""
+     }).then(function mySuccess(response) {
+       $scope.myWelcome = response.data;
+     }, function myError(response) {
+       $scope.myWelcome = response.statusText;
+     });
+ });-->
+
+</body>
+</html>
