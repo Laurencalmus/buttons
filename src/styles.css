@@ -14,9 +14,21 @@ h1 {
 }
 
 #heading {
-    top:5%;
+    /*border: solid green;*/
+    text-align: left;
+    height: 10%;
+    width: 80%;
     position: fixed;
+    top: 5%;
+    margin-left: 5%;
+}
+
+#title {
+    /*border: solid red;*/
     width: 100%;
+    left: 0%;
+    padding: 0%;
+    margin-top: 0%;
 }
 
 #heading a {
@@ -24,9 +36,12 @@ h1 {
 }
 
 #nav {
-    top: 10%;
-    position: fixed;
-    width: 100%;
+    /*border: solid blue;*/
+    left: 0%;
+    width: 80%;
+    position: absolute;
+    margin-top: -1%;
+    padding: 0%;
 }
 
 #nav ul {
@@ -41,20 +56,24 @@ h1 {
   
 #nav li a {
     float: left;
-    padding: 2%;
+    padding: 3%;
+    padding-top: 0%;
+    padding-left: 0%;
     color: rgb(79, 125, 194);
   }
   
-
-
 .container {
     width: 20%;
     height: 33%;
-    margin-left: 5%;
+    left: 5%;
+    top: 20%;
     margin-right: 33%;
-    margin-top: 20%;
+    margin-bottom: 80%;
     border: solid 1px rgba(128, 128, 128, 0.5);
     padding: 3%;
+    position: fixed;
+    min-width: 250px;
+    min-height: 300px;
 }
 
 .label {
@@ -80,3 +99,51 @@ h1 {
 .feedbackNumber {
     color: rgb(79, 125, 194);
 }
+
+/*@media only screen and (max-width: 1387px) {
+    .container {
+      width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .container {
+      width: 40%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .container {
+      margin-top: 15%;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .container {
+      margin-top: 20%;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .container {
+      margin-top: 15%;
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    .container {
+      margin-top: 10%;
+    }
+  }*/
+
+  @media only screen and (max-width: 1200px) {
+    .container {
+      padding: 1%;
+    }
+  }
+
+  @media only screen and (max-height: 700px) {
+    .container {
+      top: 150px;
+    }
+  }

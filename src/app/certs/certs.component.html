@@ -15,12 +15,20 @@
         <label>Cert ID: </label>
         </div>
 
-        <div class="textBox">
+        <!--<div id="certsTextBox" class="textBox">
         <input type="text" [(ngModel)]="certID" placeholder="" />
-        </div>
+        </div>-->
 
-        <button class="button" (click)="buttonTest()">Get</button>  
-        <div class="feedback"><p>You've typed cert ID# <span class="feedbackNumber">{{certID}}</span>.</p></div>
+        <input #certID
+        (keyup.enter)="buttonTest(certID.value)"/>
+
+
+        <button id="certsButton" class="button" (click)="buttonTest(certID.value)">Get</button> 
+
+        <div class="feedback"><p>You've typed cert ID# <span class="feedbackNumber">{{certID.value}}</span>.</p></div>
+
+
+        
     
     </div>
 

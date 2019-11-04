@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-results',
@@ -10,11 +11,13 @@ export class ResultsComponent implements OnInit {
   candidateID: string = '';
 
   resultMessage = "Fix results";
-  buttonTest() {
-    this.candidateID= 'testingResultsButton';
+  buttonTest(candidateID: string) {
+    console.log(candidateID);
+    this.candidateID = candidateID;
+    return candidateID;
   }
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }

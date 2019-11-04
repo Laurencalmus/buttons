@@ -8,20 +8,20 @@
 </head>
 <body>
  
- <div class="container">
- <h1>{{resultMessage}}</h1>
+  <div class="container">
+  <h1>{{resultMessage}}</h1>
 
- <div class="label">
- <label>Candidate ID: </label>
- </div>
+  <div class="label">
+  <label>Candidate ID: </label>
+  </div>
 
- <div class="textBox">
- <input type="text" [(ngModel)]="candidateID" placeholder="" />
- </div>
+  <input #candidateID
+  (keyup.enter)="buttonTest(candidateID.value)"/>
 
- <button class="button" (click)="buttonTest()">Post</button>  
- <div class="feedback"><p>You've typed ID# <span class="feedbackNumber">{{candidateID}}</span>.</p></div>
- </div>
+
+  <button id="resultsButton" class="button" (click)="buttonTest(candidateID.value)">Post</button> 
+
+  <div class="feedback"><p>You've typed candidate ID# <span class="feedbackNumber">{{candidateID.value}}</span>.</p></div>
 
  <!--<script>
  var app = angular.module('certsScratch', []);
@@ -35,6 +35,6 @@
        $scope.myWelcome = response.statusText;
      });
  });-->
-
+ </div>
 </body>
 </html>
